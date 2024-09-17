@@ -15,6 +15,21 @@
             text-align: center;
             padding: 20px;
         }
+
+          /* Esconde o nome do arquivo no input de arquivo */
+          input[type="file"] {
+            color: transparent;
+        }
+
+        input[type="file"]::-webkit-file-upload-button {
+            visibility: visible;
+        }
+
+    
+
+        input[type="file"]:hover::before {
+            border-color: black;
+        }
     </style>
 </head>
 <body>
